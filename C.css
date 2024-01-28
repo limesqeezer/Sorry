@@ -6,16 +6,17 @@ body {
 }
 .container {
     width: 80%;
-    margin: 50px auto;
-    background-color: #f2f2f2; 
-    padding: 20px;
+    height: 90;
+    margin: 30px auto;
+    background-color: #f2f2f2;
+    padding: 40px; /* Increased padding */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     position: relative;
     overflow: hidden;
-    background-image: url('BG.png');
-    background-size: cover; 
+    background-image: url('BG.png'); /* Background image */
+    background-size: cover;
 }
 
 h1 {
@@ -54,7 +55,7 @@ p {
     background-color: #ff4d4d;
 }
 .party-time {
-    animation: party 100000000s ;
+    animation: party 0.5s ease infinite;
 }
 
 @keyframes party {
@@ -69,16 +70,13 @@ p {
     width: 20px;
     height: 30px;
     border-radius: 50%;
-    animation: balloon-fall 2s linear infinite;
+    animation: balloon-floating 2s ease-in-out infinite;
 }
 
-@keyframes balloon-fall {
-    0% {
-        transform: translateY(-50px);
-    }
-    100% {
-        transform: translateY(calc(100% + 50px));
-    }
+@keyframes balloon-floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-250px); }
+    100% { transform: translateY(0); }
 }
 
 
