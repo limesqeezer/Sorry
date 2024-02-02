@@ -2,14 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-image:url('Back3.jpg');
 }
 .container {
+    
     width: 80%;
-    height: 90;
+    height: 100;
+    margin: 30px auto;
+    background-color: #ff1b1b;
+    padding:60px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('BG.png'); /* Background image */
+    background-size: cover;
+}
+.container2 {
+    width: 80%;
+    height: 500px;
     margin: 30px auto;
     background-color: #f2f2f2;
-    padding: 40px; /* Increased padding */
+    padding:60px; /* Increased padding */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -40,7 +55,7 @@ p {
 }
 .yes-btn {
     background-color: #4CAF50;
-    color: #fff;
+    color: #ffffff;
     transition: background-color 0.3s;
 }
 .yes-btn:hover {
